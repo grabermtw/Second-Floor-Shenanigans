@@ -1,0 +1,147 @@
+public class HighScoreList : MonoBehaviour {
+
+    private SortedList highScoresList = new SortedList();
+    int listSize;
+
+	// Use this for initialization
+	void Start () {
+        highScoresList.Clear();
+        listSize = 0;
+        highScoresList.Capacity = 10;
+		for(int i = 0; i < highScoresList.Capacity; i++)
+        {
+            if (!highScoresList.ContainsKey(PlayerPrefs.GetInt("" + i)))
+            {
+                highScoresList.Add(PlayerPrefs.GetInt("" + i), PlayerPrefs.GetString("" + i));
+                listSize++;
+            }
+        }
+	}
+
+    public override string ToString ()
+    {
+        string scoresText = "High Scores:\n";
+        for (int i = 0; i < listSize; i++)
+        {
+            scoresText += (i + 1) + ". " + PlayerPrefs.GetInt("" + i) + " " + PlayerPrefs.GetString("" + i) + "\n";
+        }
+        return scoresText;
+    }
+
+    public bool CheckScore(int score)
+    {
+        if(score.CompareTo(highScoresList.GetKey(0)) > 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public void AddScore(int score, string name)
+    {
+       
+        if (listSize >= 10 && !highScoresList.ContainsKey(score))
+        {
+            Debug.Log("listSize >= 10, not sure if you want that or not...");
+            highScoresList.RemoveAt(0);
+            highScoresList.Add(score, name);
+        }
+        else if (!highScoresList.ContainsKey(score))
+        {
+            highScoresList.Add(score, name);
+            listSize++;
+            Debug.Log("AddScore(" + score + "," + name + ")");
+        }
+        for (int i = listSize - 1; i >= 0; i--)
+        {
+            Debug.Log("PlayerPrefs Update iteration: " + i);
+            PlayerPrefs.SetInt(i + "", (int)highScoresList.GetKey(i));
+            PlayerPrefs.SetString(i + "", (string)highScoresList.GetByIndex(i));
+        }
+    }
+
+
+
+}
+
+
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class GameOver : MonoBehaviour {
+
+    public Rain rain;
+    public GameObject endScreen;
+    public Text scoreText;
+    public Text finalScore;
+    public Text highScore;
+    public Destroyer score;
+    public GameObject title;
+    public GameObject instructions;
+    public GameStart gameStart;
+    public HighScoreList highScoreList;
+    public Text highScoreListText;
+
+    private bool gameOver = false;
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        rain.enabled = false;
+        GetComponent<Movement>().enabled = false;
+        GetComponent<EdgeCollider2D>().enabled = false;
+        endScreen.SetActive(true);
+        scoreText.text = "Score: ";
+        scoreText.enabled = false;
+        finalScore.enabled = true;
+        finalScore.text = "" + score.GetScore();
+        highScore.enabled = true;
+        highScoreListText.enabled = true;
+
+        if (highScoreList.CheckScore(score.GetScore()))
+        {
+            highScoreList.AddScore(score.GetScore(), "test player");
+            Debug.Log("Score checked as true!");
+        }
+       
+        if (PlayerPrefs.GetInt("0", 0) < score.GetScore())
+        {
+            highScore.text = score.GetScore() + " Nice!";
+            PlayerPrefs.SetInt("0", score.GetScore());
+        }
+        else
+        {
+            highScore.text = "" + PlayerPrefs.GetInt("0");
+        }
+        Debug.Log(highScoreList.ToString());
+        highScoreListText.text = highScoreList.ToString();
+
+        gameOver = true;
+    }
+
+    private void Update()
+    {
+        if(gameOver && Input.GetKey(KeyCode.Space))
+        {
+            instructions.SetActive(true);
+            title.SetActive(true);
+            endScreen.SetActive(false);
+            finalScore.enabled = false;
+            gameStart.enabled = true;
+            highScore.enabled = false;
+            highScoreListText.enabled = false;
+            gameOver = false;
+            enabled = false;
+        }
+    }
+
+    public bool IsGameOver()
+    {
+        return gameOver;
+    }
+}

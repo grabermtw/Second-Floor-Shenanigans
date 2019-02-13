@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - an Air New Zealand flight
+  - An Air New Zealand Flight
+  - an Antares rocket
+  - the Apollo Command Module
+  - a lunar module ascent stage
+  - a B-17 Flying Fortress
+  - another Cessna
+  - an Air France Concorde
+  - an American Eagle CRJ700
+  - the Discovery orbiter
+  - an F/A-18 Hornet
+  - an F-35 Lightning II
+  - a Falcon Heavy booster
+  - the parachute of an Apollo Command Module
+  - a Falcon Heavy
+  - the Goodyear Blimp
+  - an Apollo Lunar Module
+  - Southwest Airlines' Maryland One
+  - a Saturn V
+  - Shuttle Atlantis
+  - a Sopwith Camel
+  - a Soyuz rocket
+  - the Space Launch System
+  - an SR-71 Blackbird
+  - a solid rocket booster
+  - the parachute of a solid rocket booster
+  - a United Airlines flight
+  - the parachute of an Orion Crew Module
+  - an Orion Crew Module
+  - a Soyuz Descent Module
+  - the parachute of a Soyuz Descent Module
+  - FredParachute
+  - barrier
+  - right barrier
+  - meteorite
+  - meteor
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - CD Balloons
+  - Player
+  - Obstacles
+  - CDTracker
+  - Terrain
+  - meteorite
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: MenuIcons
+    uniqueID: 3426160503
+    locked: 0
+  - name: HTNRTitleCards
+    uniqueID: 1961159919
+    locked: 0
+  - name: HTNR gameplay
+    uniqueID: 2936437547
+    locked: 0
+  - name: FWF gameplay
+    uniqueID: 3057712297
+    locked: 0
+  - name: FWF TitleCards
+    uniqueID: 2053581807
+    locked: 0
