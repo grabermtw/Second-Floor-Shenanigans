@@ -1,5 +1,5 @@
 # Second-Floor-Shenanigans
-## An interactive experience featuring a variety of people who reside on the second floor of Prince Frederick Hall
+## An interactive experience featuring a variety of minigames relating to the people who reside on the second floor of Prince Frederick Hall
 
 ### Anders Makes It Rain
 A game in which the player helps Anders avoid $100 bills that are falling from the sky.
