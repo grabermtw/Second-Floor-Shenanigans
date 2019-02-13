@@ -11,7 +11,7 @@ A game in which the player picks the best of two randomly-generated sentences, b
 A game in which the player flies a plane through the air collecting CDs tied to balloons while simeltaneously avoiding other aircraft.
 
 ### Emily and Emma's Meteorite Madness
-A game in which the player helps Emily or Emma collect meteorites, while avoiding other meteors falling from the sky. This game has both a single player mode and a multiplayer mode.
+A game in which the player helps Emily or Emma collect meteorites, while avoiding meteors falling from the sky. This game has both a single player mode and a multiplayer mode.
 
 ### World Of Omer
 A game in which the player attempts to select the correct translation of as many randomly generated sentences as possible.
