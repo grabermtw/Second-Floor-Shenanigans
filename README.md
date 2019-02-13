@@ -1,4 +1,4 @@
-# Second-Floor-Shenanigans
+# Second Floor Shenanigans
 ## An interactive experience featuring a variety of minigames relating to the people who reside on the second floor of Prince Frederick Hall
 
 ### Anders Makes It Rain
