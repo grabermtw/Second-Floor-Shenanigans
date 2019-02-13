@@ -2,7 +2,7 @@
 ## An interactive experience featuring a variety of minigames relating to the people who reside on the second floor of Prince Frederick Hall
 
 ### Anders Makes It Rain
-A game in which the player helps Anders avoid $100 bills that are falling from the sky.
+A game in which the player helps Anders avoid $100 bills that are falling from the sky, as Anders is suffering from success and does not want any more money.
 
 ### Hot Takes With Nate Rogers
 A game in which the player picks the best of two randomly-generated sentences, based on what categories are "hot".
