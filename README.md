@@ -8,7 +8,7 @@ A game in which the player helps Anders avoid $100 bills that are falling from t
 A game in which the player picks the best of two randomly-generated sentences, based on what categories are "hot".
 
 ### Flying With Fred
-A game in which the player flies a plane through the air, collecting CDs tied to balloons, while avoiding other aircraft.
+A game in which the player flies a plane through the air collecting CDs tied to balloons while simeltaneously avoiding other aircraft.
 
 ### Emily and Emma's Meteorite Madness
 A game in which the player helps Emily or Emma collect meteorites, while avoiding other meteors falling from the sky. This game has both a single player mode and a multiplayer mode.
