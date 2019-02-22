@@ -16,5 +16,5 @@ A game in which the player helps Emily or Emma collect meteorites, while avoidin
 ### World Of Omer
 A game in which the player attempts to select the correct translation of as many randomly generated sentences as possible.
 
-### Stacking With Jesse (still in progress)
+### Stacking With Jesse
 A game in which the player assists Jesse in creating the tallest cup stack possible.
