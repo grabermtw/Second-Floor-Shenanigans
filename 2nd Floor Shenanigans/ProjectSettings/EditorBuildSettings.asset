@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/World of Omer.unity
     guid: 3e5feab415f5b7546a9d1b7d90f3e0a8
+  - enabled: 1
+    path: Assets/Scenes/Stacking With Jesse.unity
+    guid: 82c0f207c3924634784857f1490cbdd9
   m_configObjects: {}
