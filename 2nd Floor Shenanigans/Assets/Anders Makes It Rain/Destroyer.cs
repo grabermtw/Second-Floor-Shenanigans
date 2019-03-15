@@ -20,8 +20,10 @@ public class Destroyer : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(collision.gameObject);
-        
+        if (!collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(collision.gameObject);
+        }
         movementSpeed.IncreaseSpeed();
 
         if (!gameOver.IsGameOver())

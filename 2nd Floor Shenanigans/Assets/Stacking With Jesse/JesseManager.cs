@@ -50,7 +50,7 @@ public class JesseManager : MonoBehaviour
             instructions.SetActive(false);
             scoreKeeper.SetActive(true);
             cupManager.SetActive(true);
-            
+            GetComponent<AudioSource>().Play();
         }
         else if(gameOverMessage.activeSelf == true && Input.GetKeyDown(KeyCode.Space))
         {

@@ -84,8 +84,11 @@ public class CupMaker : MonoBehaviour
 
     public void NewCups()
     {
-        movespeed += 0.006f;
-        verticalMove -= 0.0025f;
+        if (movespeed < 0.7f)
+        {
+            movespeed += 0.006f;
+        }
+        verticalMove -= 0.00217f;
         if (num >= 1)
         {
             for (int i = 0; i < num; i++)

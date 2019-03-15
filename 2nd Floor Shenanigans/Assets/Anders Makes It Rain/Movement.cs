@@ -4,21 +4,26 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour {
 
-    public float speed = 0.1f;
+    public float speed;
 
-	// Use this for initialization
-	void Start () {
+    private Rigidbody2D rb;
+
+    // Use this for initialization
+    void Start()
+    {
         transform.position = new Vector3(-3.0f, -2.15f, 0.0f);
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
         if (Input.GetKey("right"))
         {
             GetComponent<SpriteRenderer>().flipX = false;
             if (transform.position.x < 9)
             {
-                transform.Translate(Vector3.right * speed);
+                rb.MovePosition(transform.position + Vector3.right * speed);
             }
         }
         else if (Input.GetKey("left"))
@@ -26,10 +31,10 @@ public class Movement : MonoBehaviour {
             GetComponent<SpriteRenderer>().flipX = true;
             if (transform.position.x > -9)
             {
-                transform.Translate(Vector3.left * speed);
+                rb.MovePosition(transform.position + Vector3.left * speed);
             }
         }
-	}
+    }
 
     public void IncreaseSpeed()
     {

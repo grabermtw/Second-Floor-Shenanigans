@@ -843,7 +843,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: e440220370dd60946a3f38f34b91de87, type: 3}
     m_FontSize: 137
     m_FontStyle: 0
     m_BestFit: 0
@@ -855,7 +855,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sir please calm down
+  m_Text: Game Over
 --- !u!222 &365388640
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -871,7 +871,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365388637}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 521f10bf668ce4946a5effbba2b0dde0, type: 3}
   m_Name: 
@@ -888,6 +888,14 @@ MonoBehaviour:
   - Hello there
   - Game Over Time, Baby
   - Oh boy
+  - Yee Haw
+  - Faster, faster!
+  - Yeah I'm a gamer
+  - nice
+  - Oops!
+  - Hold up
+  - Hmmmmmmmm...
+  - Jeezy Creezy!
 --- !u!1 &375135166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,7 +1427,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: e440220370dd60946a3f38f34b91de87, type: 3}
     m_FontSize: 56
     m_FontStyle: 0
     m_BestFit: 0
@@ -1431,7 +1439,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: By now you should have realized what it is that you've gotta do.
+  m_Text: Press Space
 --- !u!222 &598100252
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1447,7 +1455,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 598100249}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 521f10bf668ce4946a5effbba2b0dde0, type: 3}
   m_Name: 
@@ -1464,6 +1472,24 @@ MonoBehaviour:
   - We're eatin' bees tonight!
   - By now you should have realized what it is that you've gotta do.
   - I listen to music for the plot.
+  - There is no home like the one you've got
+  - I have three dads
+  - This is Business, boys
+  - There are many things that I would like to say to you
+  - That's a spicey meatball
+  - We've got to believe in love
+  - Not quite time... for the horsey dance
+  - Hands in the air, we're gonna crash
+  - God Almighty is My Everlasting Redeemer
+  - '#BrownFood'
+  - '#ForgotMyCamelCase'
+  - Monthly reminder to stop sinning
+  - Did you know that Bolt the Super Dog is voiced by John Travolta?
+  - gotta go fast
+  - Show me your moves!
+  - Detective Pikachu is a movie in which Ryan Reynolds voices a Pikachu that wears
+    a hat and is a detective
+  - Only you can prevent forest fires
 --- !u!1 &623033266
 GameObject:
   m_ObjectHideFlags: 0
@@ -2465,7 +2491,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: e440220370dd60946a3f38f34b91de87, type: 3}
     m_FontSize: 58
     m_FontStyle: 0
     m_BestFit: 0
@@ -2830,11 +2856,11 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 72
+    m_Font: {fileID: 12800000, guid: e440220370dd60946a3f38f34b91de87, type: 3}
+    m_FontSize: 66
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 6
     m_MaxSize: 72
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -3541,8 +3567,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 72
+    m_Font: {fileID: 12800000, guid: e440220370dd60946a3f38f34b91de87, type: 3}
+    m_FontSize: 66
     m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 7
@@ -3653,6 +3679,7 @@ GameObject:
   - component: {fileID: 1524320359}
   - component: {fileID: 1524320360}
   - component: {fileID: 1524320361}
+  - component: {fileID: 1524320362}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -3725,6 +3752,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4a460904cfde1d4a8df66765689a5bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1524320362
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524320357}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1249ac8e4e09dea4187696653180230e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1592319735
 GameObject:
   m_ObjectHideFlags: 0
@@ -3759,8 +3882,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -362, y: -27.7}
-  m_SizeDelta: {x: 1038.7, y: 700}
+  m_AnchoredPosition: {x: 142, y: -27.7}
+  m_SizeDelta: {x: 2058.7, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1592319737
 MonoBehaviour:
@@ -3783,8 +3906,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 61
+    m_Font: {fileID: 12800000, guid: e440220370dd60946a3f38f34b91de87, type: 3}
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -3795,25 +3918,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '1) 1222 Tim from TIm''s Tastings
-
-    1) 1222 Tim from TIm''s Tastings
-
-    1) 1222 Tim from TIm''s Tastings
-
-    1) 1222 Tim from TIm''s Tastings
-
-    1) 1222 Tim from TIm''s Tastings
-
-    1) 1222 Tim from TIm''s Tastings
-
-    1) 1222 Tim from TIm''s Tastings
-
-    1) 1222 Tim from TIm''s Tastings
-
-    1) 1222 Tim from TIm''s Tastings
-
-    1) 1222 Tim from TIm''s Tastings1'
+  m_Text: "1) 1222 Tim from TIm's Tastings h h h h h h h h h \n1) 1222 Tim from TIm's
+    Tastings\n1) 1222 Tim from TIm's Tastings\n1) 1222 Tim from TIm's Tastings\n1)
+    1222 Tim from TIm's Tastings\n1) 1222 Tim from TIm's Tastings\n1) 1222 Tim from
+    TIm's Tastings\n1) 1222 Tim from TIm's Tastings\n1) 1222 Tim from TIm's Tastings\n1)
+    1222 Tim from TIm's Tastings1"
 --- !u!222 &1592319738
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4718,8 +4827,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -350.90002, y: -442.9}
-  m_SizeDelta: {x: 1038.7, y: 68.7}
+  m_AnchoredPosition: {x: -319.6, y: -442.9}
+  m_SizeDelta: {x: 1101.01, y: 68.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2071940348
 MonoBehaviour:
@@ -4742,8 +4851,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 61
+    m_Font: {fileID: 12800000, guid: e440220370dd60946a3f38f34b91de87, type: 3}
+    m_FontSize: 57
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0

@@ -9,10 +9,11 @@ public class GameStart : MonoBehaviour {
     public GameObject title;
     public GameObject instructions;
     public Text scoreText;
-    public EdgeCollider2D andersEdge;
+    public PolygonCollider2D andersEdge;
     public Movement movement;
     public Destroyer score;
     public GameOver gameOver;
+    public GameObject mainMenuTitleButton;
 
    void Start()
     {
@@ -27,6 +28,7 @@ public class GameStart : MonoBehaviour {
             {
                 Debug.Log("enter!!!");
                 title.SetActive(false);
+                mainMenuTitleButton.SetActive(false);
             }
         }
         else if(Input.GetKeyDown(KeyCode.Space) && !title.activeSelf)
@@ -39,7 +41,8 @@ public class GameStart : MonoBehaviour {
             andersEdge.enabled = true;
             score.ResetScore();
             enabled = false;
-            
+            GetComponent<AudioSource>().Play();
+
         }
     }
 	

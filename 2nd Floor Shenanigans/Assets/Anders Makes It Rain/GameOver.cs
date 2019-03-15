@@ -23,22 +23,41 @@ public class GameOver : MonoBehaviour {
     public GameObject nameInput;
     public Movement speed;
     public GameObject mainMenuButton;
+    public GameObject gameOverMessage;
 
     private bool gameOver = false;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(Random.Range(0,10) > 5)
+        if (!collision.gameObject.CompareTag("GameController"))
         {
-            insane.Play();
+            if (Random.Range(0, 10) > 5)
+            {
+                insane.Play();
+            }
+            else
+            {
+                dontLike.Play();
+            }
+            GetComponent<Rigidbody2D>().gravityScale = 0.1f;
+            GetComponent<Movement>().enabled = false;
+            gameOverMessage.SetActive(true);
+            gameOver = true;
         }
-        else
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && gameOverMessage.activeSelf)
         {
-            dontLike.Play();
+            gameOverMessage.SetActive(false);
+            EndTheGame();
         }
+    }
+
+    private void EndTheGame() {
         rain.enabled = false;
-        GetComponent<Movement>().enabled = false;
-        GetComponent<EdgeCollider2D>().enabled = false;
+        GetComponent<PolygonCollider2D>().enabled = false;
         endScreen.SetActive(true);
         scoreText.text = "Score: ";
         scoreText.enabled = false;
@@ -49,8 +68,8 @@ public class GameOver : MonoBehaviour {
         mainMenuButton.SetActive(true);
         nameInput.SetActive(true);
 
-        
-        highScore.text = score.GetScore() > highScoreList.GetHighScore() ? score.GetScore() + " Nice!" 
+
+        highScore.text = score.GetScore() > highScoreList.GetHighScore() ? score.GetScore() + " Nice!"
             : "" + highScoreList.GetHighScore();
 
         Debug.Log(highScoreList.ToString());

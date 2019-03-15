@@ -7,65 +7,74 @@ public class EmMovement : MonoBehaviour
     public float speed;
 
     public bool WASD;
+
+    private SpriteRenderer em;
+    private Rigidbody rb;
+    private Transform trans;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        em = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody>();
+        trans = transform;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        Vector3 newPos = trans.position;
         if (!WASD)
         {
-            if (Input.GetKey(KeyCode.UpArrow) && transform.position.z < 19)
+            if (Input.GetKey(KeyCode.UpArrow) && trans.position.z < 19)
             {
-                transform.position += new Vector3(0, 0, 1 * speed);
+                newPos += new Vector3(0, 0, 1 * speed);
             }
-            if (Input.GetKey(KeyCode.DownArrow) && transform.position.z > -1.1f)
+            if (Input.GetKey(KeyCode.DownArrow) && trans.position.z > -1.1f)
             {
-                transform.position += new Vector3(0, 0, -1 * speed);
+                newPos += new Vector3(0, 0, -1 * speed);
             }
-            if (Input.GetKey(KeyCode.LeftArrow) && !(transform.position.x < -2.8f && transform.position.z < -.7f)
-                && !(transform.position.x < -4 && transform.position.z >= -.7f && transform.position.z < 1)
-                && !(transform.position.x < -7 && transform.position.z >= 1))
+            if (Input.GetKey(KeyCode.LeftArrow) && !(trans.position.x < -2.8f && trans.position.z < -.7f)
+                && !(trans.position.x < -4 && trans.position.z >= -.7f && trans.position.z < 1)
+                && !(trans.position.x < -7 && trans.position.z >= 1))
             {
-                GetComponent<SpriteRenderer>().flipX = true;
-                transform.position += new Vector3(-1 * speed, 0, 0);
+                em.flipX = true;
+                newPos += new Vector3(-1 * speed, 0, 0);
             }
-            if (Input.GetKey(KeyCode.RightArrow) && !(transform.position.x > 2.8f && transform.position.z < -.7f)
-                && !(transform.position.x > 4 && transform.position.z >= -.7f && transform.position.z < 1)
-                && !(transform.position.x > 8 && transform.position.z >= 1))
+            if (Input.GetKey(KeyCode.RightArrow) && !(trans.position.x > 2.8f && trans.position.z < -.7f)
+                && !(trans.position.x > 4 && trans.position.z >= -.7f && trans.position.z < 1)
+                && !(trans.position.x > 8 && trans.position.z >= 1))
             {
-                GetComponent<SpriteRenderer>().flipX = false;
-                transform.position += new Vector3(1 * speed, 0, 0);
+                em.flipX = false;
+                newPos += new Vector3(1 * speed, 0, 0);
             }
+            rb.MovePosition(newPos);
         }
         else
         {
-            if (Input.GetKey(KeyCode.W) && transform.position.z < 19)
+            if (Input.GetKey(KeyCode.W) && trans.position.z < 19)
             {
-                transform.position += new Vector3(0, 0, 1 * speed);
+                newPos += new Vector3(0, 0, 1 * speed);
             }
-            if (Input.GetKey(KeyCode.S) && transform.position.z > -1.1f)
+            if (Input.GetKey(KeyCode.S) && trans.position.z > -1.1f)
             {
-                transform.position += new Vector3(0, 0, -1 * speed);
+                newPos += new Vector3(0, 0, -1 * speed);
             }
-            if (Input.GetKey(KeyCode.A) && !(transform.position.x < -2.8f && transform.position.z < -.7f)
-                && !(transform.position.x < -4 && transform.position.z >= -.7f && transform.position.z < 1)
-                && !(transform.position.x < -7 && transform.position.z >= 1))
+            if (Input.GetKey(KeyCode.A) && !(trans.position.x < -2.8f && trans.position.z < -.7f)
+                && !(trans.position.x < -4 && trans.position.z >= -.7f && trans.position.z < 1)
+                && !(trans.position.x < -7 && trans.position.z >= 1))
             {
-                GetComponent<SpriteRenderer>().flipX = true;
-                transform.position += new Vector3(-1 * speed, 0, 0);
+                em.flipX = true;
+                newPos += new Vector3(-1 * speed, 0, 0);
             }
-            if (Input.GetKey(KeyCode.D) && !(transform.position.x > 2.8f && transform.position.z < -.7f)
-                && !(transform.position.x > 4 && transform.position.z >= -.7f && transform.position.z < 1)
-                && !(transform.position.x > 8 && transform.position.z >= 1))
+            if (Input.GetKey(KeyCode.D) && !(trans.position.x > 2.8f && trans.position.z < -.7f)
+                && !(trans.position.x > 4 && trans.position.z >= -.7f && trans.position.z < 1)
+                && !(trans.position.x > 8 && trans.position.z >= 1))
             {
-                GetComponent<SpriteRenderer>().flipX = false;
-                transform.position += new Vector3(1 * speed, 0, 0);
+                em.flipX = false;
+                newPos += new Vector3(1 * speed, 0, 0);
             }
+            rb.MovePosition(newPos);
         }
     }
 
