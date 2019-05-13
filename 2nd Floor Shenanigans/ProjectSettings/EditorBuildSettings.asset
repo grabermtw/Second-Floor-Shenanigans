@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stacking With Jesse.unity
     guid: 82c0f207c3924634784857f1490cbdd9
+  - enabled: 1
+    path: Assets/Scenes/Flash Mob.unity
+    guid: d321c33a45e1a824491dc7de8c4cb82f
   m_configObjects: {}

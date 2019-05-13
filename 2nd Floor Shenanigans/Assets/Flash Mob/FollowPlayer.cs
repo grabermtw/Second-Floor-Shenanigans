@@ -7,8 +7,8 @@ public class FollowPlayer : MonoBehaviour
  
     public float distance;
     public float height;
-    public Transform cameraTarget;
 
+    private Transform cameraTarget;
     private Transform camTrans;
     private Transform player;
     private DCCPlayerControl playerControl;
@@ -16,7 +16,8 @@ public class FollowPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("Player").GetComponent<Transform>();
+        cameraTarget = GameObject.FindWithTag("Target").GetComponent<Transform>();
+        player = GameObject.FindWithTag("Player").GetComponent<Transform>();
         playerControl = player.gameObject.GetComponent<DCCPlayerControl>();
         camTrans = transform;
         
