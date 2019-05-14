@@ -28,7 +28,7 @@ A game in which the player flies a plane through the air collecting CDs tied to 
 A game in which the player helps Emily or Emma collect meteorites, while avoiding meteors falling from the sky. This game has both a single player mode and a multiplayer mode. It was inspired by Emily Whittaker and Emma Mirizio, two students of astrophysics at the University of Maryland. Last summer, Emma conducted research on meteors as part of a NASA internship.
 
 ### World Of Omer
-A game in which the player attempts to select the correct translation of as many randomly generated sentences as possible. Omer Bowman, a sophomore mechanical engineering student, inspired this game. Omer has a profound interest in languages, and is fluent in both English and Hebrew, and has experience with Japanese, German, Spanish....
+A game in which the player attempts to select the correct translation of as many randomly generated sentences as possible. Omer Bowman, a sophomore mechanical engineering student, inspired this game. Omer has a profound interest in languages, and is fluent in both English and Hebrew, and has learned a considerable amount of Spanish, Italian, Japanese, German, Swedish, and Russian.
 
 ### Stacking With Jesse
 A game in which the player assists Jesse in creating the tallest cup stack possible. This game was inspired by Jesse Parreira, a mechanical engineering student at University of Maryland. Jesse is known for collecting the free cups that student groups give out at events such as the First Look Fair and Maryland Day, and then creating massive structures with these cups. To date, Jesse has collected over 200 of such cups. For scale, the record on Stacking With Jesse as of this writing is only about 500 cups stacked.
