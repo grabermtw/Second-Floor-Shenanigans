@@ -1,6 +1,9 @@
 # Second Floor Shenanigans
 ## An interactive experience featuring a variety of minigames relating to the people who reside on the second floor of Prince Frederick Hall
 
+### Flash Mob
+This game was created as a variation on the DCC Flash Mob that took place in the fall of 2017. The objective is to reach the Testudo statue in front of McKeldin Library without being caught by another participant in the Flash Mob. There are 30 playable characters, whoever you don't pick will be a part of the mob.
+
 ### Anders Makes It Rain
 A game in which the player helps Anders avoid $100 bills that are falling from the sky, as Anders is suffering from success and does not want any more money.
 
