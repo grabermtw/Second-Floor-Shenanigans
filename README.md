@@ -6,7 +6,7 @@
 
 "Hot Takes With Nate Rogers" is a bit of a different story. While the in-game premise of Nate starting a newspaper is indeed specific to Nate Rogers, the mechanic of the game, randomly generating silly sentences from a list of given phrases and words, can be applied to anyone or anything with hilarious results. Simply edit HotTakeGenerator.cs to replace the UMD and DCC-specific phrases with your own.
 
-"Flying With Fred," "Emily and Emma's Meteorite Madness," "World Of Omer," and "Stacking With Jesse" can all be modified easily to fit whatever person or theme you desire, very similarly to "Anders Makes It Rain." 
+"Flying With Fred," "Emily and Emma's Meteorite Madness," "World Of Omer," and "Stacking With Jesse" can all be modified easily to fit whatever person or theme you desire by replacing the images used, very similarly to "Anders Makes It Rain." 
 
 As a whole, *Second Floor Shenanigans* is far from complete. I intend to continue to create minigames featuring specific people throughout the next year, and possibly beyond, giving others even more options when it comes to adapting these to their own experiences.
 
