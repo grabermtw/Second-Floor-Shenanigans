@@ -43,7 +43,7 @@ public class ScatterPeople : MonoBehaviour
             string seconds = (timeElapsed % 60).ToString("f2");
             timerText.text = "Time: " + minutes + ":" + seconds;
         }
-        else if (Input.GetKeyDown(KeyCode.Space) && !characterSelect.activeSelf && gameoverTime > 2)
+        else if (Input.GetKeyDown(KeyCode.Space) && !characterSelect.activeSelf && gameoverTime > 1.5f)
         {
             mob.SetActive(false);
             highScoreListText.enabled = true;
@@ -123,7 +123,7 @@ public class ScatterPeople : MonoBehaviour
             }
             else
             {
-                rb.gameObject.transform.position = new Vector3(Random.Range(-64, 62), 16.5f, Random.Range(-300, 82));
+                rb.gameObject.transform.position = new Vector3(Random.Range(-64, 62), 16.5f, Random.Range(-300, 72));
             }
         }
     }

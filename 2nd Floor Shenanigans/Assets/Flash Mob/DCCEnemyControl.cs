@@ -39,15 +39,16 @@ public class DCCEnemyControl : MonoBehaviour
         Quaternion realRot = Quaternion.Euler(0, rotation.eulerAngles.y, 0);
         rb.MoveRotation(realRot);
 
-        if (transform.position.z > -270 || System.Math.Abs(Vector3.Distance(playerTransform.position, transform.position)) < 100)
+        if (transform.position.z > -270 || System.Math.Abs(Vector3.Distance(playerTransform.position, transform.position)) < 75)
         {
             if (!lying)
             {
                 rb.MovePosition(transform.position + transform.forward * Time.deltaTime * speed);
 
-                if (groundMonitor.IsOnGround() && Random.Range(0, 160) == 50)
+                if (groundMonitor.IsOnGround() && (Random.Range(0, 170) == 50 || ((System.Math.Abs(rb.velocity.x) < 0.03f && System.Math.Abs(rb.velocity.z) < 0.03f) && Random.Range(0,70) == 25)))
                 {
                     rb.AddForce(new Vector3(0, 200, 0));
+                    //Debug.Log(gameObject.name + " x velocity: " + rb.velocity.x + " z velocity: " + rb.velocity.z);
                 }
             }
         }

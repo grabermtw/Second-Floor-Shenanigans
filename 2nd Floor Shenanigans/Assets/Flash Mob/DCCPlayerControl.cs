@@ -54,11 +54,11 @@ public class DCCPlayerControl : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E))
         {
-            cameraTarget.localPosition = new Vector3(0, 1, 4);
+            cameraTarget.localPosition = new Vector3(0, 1.5f, 4);
         }
         else if (!caught)
         {
-            cameraTarget.localPosition = new Vector3(0, 1, -4);
+            cameraTarget.localPosition = new Vector3(0, 1.5f, -4);
         }
 
         if (!caught)
@@ -88,7 +88,7 @@ public class DCCPlayerControl : MonoBehaviour
             // Jump
             if (Input.GetKeyDown(KeyCode.Space) && !lying && (groundMonitor.IsOnGround() || rb.velocity.y == 0))
             {
-                rb.AddForce(new Vector3(0, 200, 0));
+                rb.AddForce(new Vector3(0, 250, 0));
             }
             // Lay down
             if (Input.GetKey(KeyCode.X))
