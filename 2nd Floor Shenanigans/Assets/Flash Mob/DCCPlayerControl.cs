@@ -29,7 +29,14 @@ public class DCCPlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (transform.position.y < -10)
+        {
+            caught = true;
+            Quaternion deltaRotation = Quaternion.Euler(new Vector3(90, transform.localEulerAngles.y, transform.localEulerAngles.z));
+            rb.MoveRotation(deltaRotation);
+            lying = true;
+            GameObject.Find("Manager").GetComponent<ScatterPeople>().GameOver(false);
+        }
     }
 
     public void OnCollisionEnter(Collision other)
