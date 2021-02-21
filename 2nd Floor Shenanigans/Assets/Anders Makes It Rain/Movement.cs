@@ -23,7 +23,7 @@ public class Movement : MonoBehaviour {
             GetComponent<SpriteRenderer>().flipX = false;
             if (transform.position.x < 9)
             {
-                rb.MovePosition(transform.position + Vector3.right * speed);
+                rb.MovePosition(transform.position + Vector3.right * speed * Time.fixedDeltaTime);
             }
         }
         else if (Input.GetKey("left"))
@@ -31,14 +31,14 @@ public class Movement : MonoBehaviour {
             GetComponent<SpriteRenderer>().flipX = true;
             if (transform.position.x > -9)
             {
-                rb.MovePosition(transform.position + Vector3.left * speed);
+                rb.MovePosition(transform.position + Vector3.left * speed * Time.fixedDeltaTime);
             }
         }
     }
 
     public void IncreaseSpeed()
     {
-        speed += 0.0013f;
+        speed += 0.13f;
     }
 
     public void ResetSpeed()
